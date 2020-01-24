@@ -108,5 +108,6 @@
   <ItemGroup>
     <Resource Include="Images\abstractfactory.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

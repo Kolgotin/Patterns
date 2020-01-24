@@ -28,11 +28,7 @@ namespace Patterns
                             "создавать происходит в подклассах. То есть паттерн предполагает, что базовый класс делегирует " +
                             "создание объектов классам-наследникам",
                             Reference = "https://metanit.com/sharp/patterns/2.1.php",
-                            Example = "abstract class Product\n{}\n\nclass ConcreteProductA : Product\n{}\n\nclass ConcreteProductB " +
-                            ": Product\n{}\n\nabstract class Creator\n{\n    public abstract Product FactoryMethod();\n}\n\nclass " +
-                            "ConcreteCreatorA : Creator\n{\n    public override Product FactoryMethod() { return new " +
-                            "ConcreteProductA(); }\n}\n\nclass ConcreteCreatorB : Creator\n{\n    public override Product " +
-                            "FactoryMethod() { return new ConcreteProductB(); }\n}",
+                            CodeExampleFilePath = @"factorymethod",
                             ImageSource = @"Images\factorymethod.png"
                         },
                         new PatternsModel
@@ -42,7 +38,7 @@ namespace Patterns
                             "создания семейств взаимосвязанных объектов с определенными интерфейсами без указания конкретных " +
                             "типов данных объектов",
                             Reference = "https://metanit.com/sharp/patterns/2.2.php",
-                            Example = @"",
+                            CodeExampleFilePath = @"abstractfactory",
                             ImageSource = @"Images\abstractfactory.png"
                         },
                         new PatternsModel
@@ -52,7 +48,7 @@ namespace Patterns
                             "для определенного класса будет создан только один объект, а также предоставит к этому объекту " +
                             "точку доступа.",
                             Reference = "https://metanit.com/sharp/patterns/2.3.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -60,7 +56,7 @@ namespace Patterns
                             Description = "Паттерн Прототип (Prototype) позволяет создавать объекты на основе уже ранее " +
                             "созданных объектов-прототипов. То есть по сути данный паттерн предлагает технику клонирования объектов.",
                             Reference = "https://metanit.com/sharp/patterns/2.4.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -68,7 +64,7 @@ namespace Patterns
                             Description = "Строитель (Builder) - шаблон проектирования, который инкапсулирует создание " +
                             "объекта и позволяет разделить его на различные этапы.",
                             Reference = "https://metanit.com/sharp/patterns/2.5.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         }
                     }
                 },
@@ -83,7 +79,7 @@ namespace Patterns
                             Description = "Декоратор (Decorator) представляет структурный шаблон проектирования, " +
                             "который позволяет динамически подключать к объекту дополнительную функциональность.",
                             Reference = "https://metanit.com/sharp/patterns/4.1.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -92,7 +88,7 @@ namespace Patterns
                             "одного класса в интерфейс другого. Благодаря реализации данного паттерна мы можем " +
                             "использовать вместе классы с несовместимыми интерфейсами.",
                             Reference = "https://metanit.com/sharp/patterns/4.2.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -100,7 +96,7 @@ namespace Patterns
                             Description = "Фасад (Facade) представляет шаблон проектирования, который позволяет скрыть " +
                             "сложность системы с помощью предоставления упрощенного интерфейса для взаимодействия с ней",
                             Reference = "https://metanit.com/sharp/patterns/4.3.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -109,7 +105,7 @@ namespace Patterns
                             "структуру по принципу часть-целое и позволяет клиенту одинаково работать как с отдельными " +
                             "объектами, так и с группой объектов.",
                             Reference = "https://metanit.com/sharp/patterns/4.4.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -118,7 +114,7 @@ namespace Patterns
                             "управляет доступом к другому объекту. То есть создается объект-суррогат, который может " +
                             "выступать в роли другого объекта и замещать его.",
                             Reference = "https://metanit.com/sharp/patterns/4.5.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -127,7 +123,7 @@ namespace Patterns
                             "отделить абстракцию от реализации таким образом, чтобы и абстракцию, и реализацию " +
                             "можно было изменять независимо друг от друга.",
                             Reference = "https://metanit.com/sharp/patterns/4.6.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -136,7 +132,7 @@ namespace Patterns
                             "который позволяет использовать разделяемые объекты сразу в нескольких контекстах. " +
                             "Данный паттерн используется преимущественно для оптимизации работы с памятью.",
                             Reference = "https://metanit.com/sharp/patterns/4.7.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         }
                     }
                 },
@@ -153,7 +149,7 @@ namespace Patterns
                             "от ситуации мы можем легко заменить один используемый алгоритм другим. При этом замена алгоритма " +
                             "происходит независимо от объекта, который использует данный алгоритм.",
                             Reference = "https://metanit.com/sharp/patterns/3.1.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -163,7 +159,7 @@ namespace Patterns
                             "множество наблюдателей. И при изменении наблюдаемого объекта автоматически происходит оповещение " +
                             "всех наблюдателей",
                             Reference = "https://metanit.com/sharp/patterns/3.2.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -172,7 +168,7 @@ namespace Patterns
                             "действия в виде отдельного объекта. Этот объект запроса на действие и называется командой. При этом " +
                             "объекты, инициирующие запросы на выполнение действия, отделяются от объектов, которые выполняют это действие",
                             Reference = "https://metanit.com/sharp/patterns/3.3.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -180,7 +176,7 @@ namespace Patterns
                             Description = "Шаблонный метод (Template Method) определяет общий алгоритм поведения подклассов, " +
                             "позволяя им переопределить отдельные шаги этого алгоритма без изменения его структуры.",
                             Reference = "https://metanit.com/sharp/patterns/3.4.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -188,7 +184,7 @@ namespace Patterns
                             Description = "Паттерн Итератор (Iterator) предоставляет абстрактный интерфейс для последовательного " +
                             "доступа ко всем элементам составного объекта без раскрытия его внутренней структуры",
                             Reference = "https://metanit.com/sharp/patterns/3.5.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -196,7 +192,7 @@ namespace Patterns
                             Description = "Состояние (State) - шаблон проектирования, который позволяет объекту " +
                             "изменять свое поведение в зависимости от внутреннего состояния.",
                             Reference = "https://metanit.com/sharp/patterns/3.6.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -207,7 +203,7 @@ namespace Patterns
                             "цепочке, пока один из ее объектов не обработает запрос. Каждый объект при получении запроса выбирает, либо " +
                             "обработать запрос, либо передать выполнение запроса следующему по цепочке",
                             Reference = "https://metanit.com/sharp/patterns/3.7.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -216,7 +212,7 @@ namespace Patterns
                             "для заданного языка и интерпретатор предложений этого языка. Как правило, данный " +
                             "шаблон проектирования применяется для часто повторяющихся операций",
                             Reference = "https://metanit.com/sharp/patterns/3.8.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -225,7 +221,7 @@ namespace Patterns
                             "который обеспечивает взаимодействие множества объектов без необходимости ссылаться друг " +
                             "на друга. Тем самым достигается слабосвязанность взаимодействующих объектов",
                             Reference = "https://metanit.com/sharp/patterns/3.9.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -233,7 +229,7 @@ namespace Patterns
                             Description = "Паттерн Хранитель (Memento) позволяет выносить внутреннее состояние объекта за его " +
                             "пределы для последующего возможного восстановления объекта без нарушения принципа инкапсуляции",
                             Reference = "https://metanit.com/sharp/patterns/3.10.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                         new PatternsModel
                         {
@@ -241,7 +237,7 @@ namespace Patterns
                             Description = "Паттерн Посетитель (Visitor) позволяет определить " +
                             "операцию для объектов других классов без изменения этих классов.",
                             Reference = "https://metanit.com/sharp/patterns/3.11.php",
-                            Example = @""
+                            CodeExampleFilePath = @""
                         },
                     }
                 }
