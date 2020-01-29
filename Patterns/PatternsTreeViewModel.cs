@@ -1,11 +1,15 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 
 namespace Patterns
 {
     class PatternsTreeViewModel
     {
+        public int WindowWidth { get; set; } = 1500;
+        public int PatternWidth => WindowWidth * 4 / 5;
         public string HeaderLabel => "Паттерны";
         public ObservableCollection<KindsModel> Kinds { get; set; }
+
         public PatternsTreeViewModel()
         {
             PatternsFilling();
