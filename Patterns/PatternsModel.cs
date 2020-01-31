@@ -19,7 +19,7 @@ namespace Patterns
             get => GetCodeExampleFromFile(CodeExampleFilePath);
         }
         public string CodeExampleFilePath;
-        public string ImageSource { get; set; }
+        public string ImageSource { get; set; } = "";
         public Visibility ImageVisibility => (string.IsNullOrEmpty(ImageSource)) ? Visibility.Collapsed : Visibility.Visible;
         public object Diagram { get; set; }
 

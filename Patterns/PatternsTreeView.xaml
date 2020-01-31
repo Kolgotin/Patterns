@@ -26,7 +26,11 @@
                                         <Expander Header="Схема" Margin="5" 
                                                   FontFamily="Courier New" 
                                                   Visibility="{Binding ImageVisibility}">
-                                            <Image Source="{Binding ImageSource}" />
+                                            <Image>
+                                                <Image.Source>
+                                                    <BitmapImage UriSource="{Binding ImageSource}"/>
+                                                </Image.Source>
+                                            </Image>
                                         </Expander>
                                         <Expander Header="Пример кода" 
                                                   FontFamily="Courier New" 
