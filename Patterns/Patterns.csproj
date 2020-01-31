@@ -108,6 +108,20 @@
   <ItemGroup>
     <Resource Include="Images\abstractfactory.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="CodeExamples\singleton.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\prototype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\prototype.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\builder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\builder.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

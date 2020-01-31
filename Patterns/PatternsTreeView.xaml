@@ -20,12 +20,20 @@
                             <TreeViewItem.ItemTemplate>
                                 <DataTemplate>
                                     <TreeViewItem Header="{Binding Name}">
-                                        <TextBlock Text="{Binding Description}" TextWrapping="Wrap" MaxWidth="{Binding ElementName=MainWindow, Path=DataContext.PatternWidth}"/>
-                                        <Expander Header="Схема" Margin="5">
+                                        <TextBlock Text="{Binding Description}" 
+                                                   TextWrapping="Wrap" 
+                                                   MaxWidth="{Binding ElementName=MainWindow, Path=DataContext.PatternWidth}"/>
+                                        <Expander Header="Схема" Margin="5" 
+                                                  FontFamily="Courier New" 
+                                                  Visibility="{Binding ImageVisibility}">
                                             <Image Source="{Binding ImageSource}" />
                                         </Expander>
-                                        <Expander Header="Пример кода" FontFamily="Courier New" Margin="5">
-                                            <TextBlock FontFamily="Courier New" FontSize="14" Text="{Binding Example}" Background="White"/>
+                                        <Expander Header="Пример кода" 
+                                                  FontFamily="Courier New" 
+                                                  Margin="5">
+                                            <TextBox FontFamily="Courier New" 
+                                                     FontSize="14" Text="{Binding CodeExample, Mode=OneWay}"
+                                                     IsReadOnly="True"/>
                                         </Expander>
                                         <Label>
                                             <Hyperlink NavigateUri="{Binding Reference}" RequestNavigate="Hyperlink_RequestNavigate">

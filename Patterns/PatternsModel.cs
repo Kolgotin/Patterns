@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Text;
+using System.Windows;
 
 namespace Patterns
 {
@@ -13,12 +14,13 @@ namespace Patterns
         public string Name { get; set; }
         public string Description { get; set; }
         public string Reference { get; set; }
-        public string Example
+        public string CodeExample
         {
             get => GetCodeExampleFromFile(CodeExampleFilePath);
         }
         public string CodeExampleFilePath;
         public string ImageSource { get; set; }
+        public Visibility ImageVisibility => (string.IsNullOrEmpty(ImageSource)) ? Visibility.Collapsed : Visibility.Visible;
         public object Diagram { get; set; }
 
 

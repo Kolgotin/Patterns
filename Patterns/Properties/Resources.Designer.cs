@@ -89,6 +89,40 @@ namespace Patterns.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to class Client
+        ///{
+        ///    void Main()
+        ///    {
+        ///        Builder builder = new ConcreteBuilder();
+        ///        Director director = new Director(builder);
+        ///        director.Construct();
+        ///        Product product = builder.GetResult();
+        ///    }
+        ///}
+        ///class Director
+        ///{
+        ///    Builder builder;
+        ///    public Director(Builder builder)
+        ///    {
+        ///        this.builder = builder;
+        ///    }
+        ///    public void Construct()
+        ///    {
+        ///        builder.BuildPartA();
+        ///        builder.BuildPartB();
+        ///        builder.BuildPartC();
+        ///    }
+        ///}
+        /// 
+        ///abstract cla [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string builder {
+            get {
+                return ResourceManager.GetString("builder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to abstract class Product
         ///{}
         ///
@@ -113,6 +147,61 @@ namespace Patterns.Properties {
         internal static string factorymethod {
             get {
                 return ResourceManager.GetString("factorymethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Client
+        ///{
+        ///    void Operation()
+        ///    {
+        ///        Prototype prototype = new ConcretePrototype1(1);
+        ///        Prototype clone = prototype.Clone();
+        ///        prototype = new ConcretePrototype2(2);
+        ///        clone = prototype.Clone();
+        ///    }
+        ///}
+        /// 
+        ///abstract class Prototype
+        ///{
+        ///    public int Id { get; private set; }
+        ///    public Prototype(int id)
+        ///    {
+        ///        this.Id = id;
+        ///    }
+        ///    public abstract Prototype Clone();
+        ///}
+        /// 
+        ///class ConcretePrototype1 : Prototype
+        ///{
+        ///    public ConcretePrototype1(int id)
+        ///   [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string prototype {
+            get {
+                return ResourceManager.GetString("prototype", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Singleton
+        ///{
+        ///    private static Singleton instance;
+        /// 
+        ///    private Singleton()
+        ///    {}
+        /// 
+        ///    public static Singleton getInstance()
+        ///    {
+        ///        if (instance == null)
+        ///            instance = new Singleton();
+        ///        return instance;
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string singleton {
+            get {
+                return ResourceManager.GetString("singleton", resourceCulture);
             }
         }
     }
