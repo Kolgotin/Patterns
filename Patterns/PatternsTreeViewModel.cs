@@ -33,7 +33,7 @@ namespace Patterns
                             "создание объектов классам-наследникам",
                             Reference = "https://metanit.com/sharp/patterns/2.1.php",
                             CodeExampleFilePath = "factorymethod",
-                            ImageSource = @"Images\factorymethod.png"
+                            ImageSource = "factorymethod.png"
                         },
                         new PatternsModel
                         {
@@ -43,7 +43,7 @@ namespace Patterns
                             "типов данных объектов",
                             Reference = "https://metanit.com/sharp/patterns/2.2.php",
                             CodeExampleFilePath = "abstractfactory",
-                            ImageSource = @"Images\abstractfactory.png"
+                            ImageSource = "abstractfactory.png"
                         },
                         new PatternsModel
                         {
@@ -61,7 +61,7 @@ namespace Patterns
                             "созданных объектов-прототипов. То есть по сути данный паттерн предлагает технику клонирования объектов.",
                             Reference = "https://metanit.com/sharp/patterns/2.4.php",
                             CodeExampleFilePath = "prototype",
-                            ImageSource = @"Images\prototype.png"
+                            ImageSource = "prototype.png"
                         },
                         new PatternsModel
                         {
@@ -70,7 +70,7 @@ namespace Patterns
                             "объекта и позволяет разделить его на различные этапы.",
                             Reference = "https://metanit.com/sharp/patterns/2.5.php",
                             CodeExampleFilePath = "builder",
-                            ImageSource = @"Images\builder.png"
+                            ImageSource = "builder.png"
                         }
                     }
                 },
@@ -85,7 +85,8 @@ namespace Patterns
                             Description = "Декоратор (Decorator) представляет структурный шаблон проектирования, " +
                             "который позволяет динамически подключать к объекту дополнительную функциональность.",
                             Reference = "https://metanit.com/sharp/patterns/4.1.php",
-                            CodeExampleFilePath = ""
+                            CodeExampleFilePath = "decorator",
+                            ImageSource="decorator.png"
                         },
                         new PatternsModel
                         {
@@ -94,7 +95,8 @@ namespace Patterns
                             "одного класса в интерфейс другого. Благодаря реализации данного паттерна мы можем " +
                             "использовать вместе классы с несовместимыми интерфейсами.",
                             Reference = "https://metanit.com/sharp/patterns/4.2.php",
-                            CodeExampleFilePath = ""
+                            CodeExampleFilePath = "adapter",
+                            ImageSource="adapter.png"
                         },
                         new PatternsModel
                         {

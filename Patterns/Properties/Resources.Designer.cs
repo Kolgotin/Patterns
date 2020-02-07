@@ -91,6 +91,45 @@ namespace Patterns.Properties {
         /// <summary>
         ///   Looks up a localized string similar to class Client
         ///{
+        ///    public void Request(Target target)
+        ///    {
+        ///        target.Request();
+        ///    }
+        ///}
+        ///// класс, к которому надо адаптировать другой класс   
+        ///class Target
+        ///{
+        ///    public virtual void Request()
+        ///    {}
+        ///}
+        ///  
+        ///// Адаптер
+        ///class Adapter : Target
+        ///{
+        ///    private Adaptee adaptee = new Adaptee();
+        ///  
+        ///    public override void Request()
+        ///    {
+        ///        adaptee.SpecificRequest();
+        ///    }
+        ///}
+        ///  
+        ///// Адаптируемый класс
+        ///class Adaptee
+        ///{
+        ///    public void SpecificRequest()
+        ///    {}
+        ///}.
+        /// </summary>
+        internal static string adapter {
+            get {
+                return ResourceManager.GetString("adapter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Client
+        ///{
         ///    void Main()
         ///    {
         ///        Builder builder = new ConcreteBuilder();
@@ -119,6 +158,41 @@ namespace Patterns.Properties {
         internal static string builder {
             get {
                 return ResourceManager.GetString("builder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to abstract class Component
+        ///{
+        ///    public abstract void Operation();
+        ///}
+        ///class ConcreteComponent  Component
+        ///{
+        ///    public override void Operation()
+        ///    {}
+        ///}
+        ///abstract class Decorator  Component
+        ///{
+        ///    protected Component component;
+        /// 
+        ///    public void SetComponent(Component component)
+        ///    {
+        ///        this.component = component;
+        ///    }
+        /// 
+        ///    public override void Operation()
+        ///    {
+        ///        if (component != null)
+        ///            component.Operation();
+        ///    }
+        ///}
+        ///class ConcreteDecoratorA  Decorator
+        ///{
+        ///    pu [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string decorator {
+            get {
+                return ResourceManager.GetString("decorator", resourceCulture);
             }
         }
         

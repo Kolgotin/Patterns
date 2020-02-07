@@ -123,5 +123,21 @@
   <ItemGroup>
     <None Include="CodeExamples\builder.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\decorator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\decorator.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CodeExamples\abstractfactory.txt" />
+    <Resource Include="CodeExamples\factorymethod.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\adapter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\adapter.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

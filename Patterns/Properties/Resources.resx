@@ -121,8 +121,14 @@
   <data name="abstractfactory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\abstractfactory.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
+  <data name="adapter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\adapter.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
   <data name="builder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\builder.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="decorator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\decorator.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
   <data name="factorymethod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\factorymethod.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
