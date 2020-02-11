@@ -5,8 +5,9 @@ namespace Patterns
 {
     class PatternsTreeViewModel
     {
-        public int WindowWidth { get; set; } = 1500;
-        public int PatternWidth => WindowWidth * 4 / 5;
+        public double WindowWidth { get; set; } = 1500; 
+        //todo: доработать логику связанную с размером окна, шириной описания паттерна и реакцию на изменнеие размера окна
+        public double PatternWidth => WindowWidth * 4 / 5;
         public string HeaderLabel => "Паттерны";
         public ObservableCollection<KindsModel> Kinds { get; set; }
 
@@ -104,7 +105,8 @@ namespace Patterns
                             Description = "Фасад (Facade) представляет шаблон проектирования, который позволяет скрыть " +
                             "сложность системы с помощью предоставления упрощенного интерфейса для взаимодействия с ней",
                             Reference = "https://metanit.com/sharp/patterns/4.3.php",
-                            CodeExampleFilePath = ""
+                            CodeExampleFilePath = "facade",
+                            ImageSource = "facade.png"
                         },
                         new PatternsModel
                         {
@@ -113,7 +115,8 @@ namespace Patterns
                             "структуру по принципу часть-целое и позволяет клиенту одинаково работать как с отдельными " +
                             "объектами, так и с группой объектов.",
                             Reference = "https://metanit.com/sharp/patterns/4.4.php",
-                            CodeExampleFilePath = ""
+                            CodeExampleFilePath = "composite",
+                            ImageSource = "composite.png"
                         },
                         new PatternsModel
                         {
@@ -122,7 +125,8 @@ namespace Patterns
                             "управляет доступом к другому объекту. То есть создается объект-суррогат, который может " +
                             "выступать в роли другого объекта и замещать его.",
                             Reference = "https://metanit.com/sharp/patterns/4.5.php",
-                            CodeExampleFilePath = ""
+                            CodeExampleFilePath = "proxy",
+                            ImageSource = "proxy.png"
                         },
                         new PatternsModel
                         {
@@ -131,7 +135,8 @@ namespace Patterns
                             "отделить абстракцию от реализации таким образом, чтобы и абстракцию, и реализацию " +
                             "можно было изменять независимо друг от друга.",
                             Reference = "https://metanit.com/sharp/patterns/4.6.php",
-                            CodeExampleFilePath = ""
+                            CodeExampleFilePath = "bridge",
+                            ImageSource = "bridge.png"
                         },
                         new PatternsModel
                         {
@@ -140,7 +145,8 @@ namespace Patterns
                             "который позволяет использовать разделяемые объекты сразу в нескольких контекстах. " +
                             "Данный паттерн используется преимущественно для оптимизации работы с памятью.",
                             Reference = "https://metanit.com/sharp/patterns/4.7.php",
-                            CodeExampleFilePath = ""
+                            CodeExampleFilePath = "flyweight",
+                            ImageSource = "flyweight.png"
                         }
                     }
                 },

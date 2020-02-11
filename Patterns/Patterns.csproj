@@ -139,5 +139,35 @@
   <ItemGroup>
     <None Include="CodeExamples\adapter.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\facade.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\facade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\composite.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\composite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\proxy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\proxy.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bridge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\bridge.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\flyweight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\flyweight.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

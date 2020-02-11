@@ -128,6 +128,15 @@ namespace Patterns.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string bridge {
+            get {
+                return ResourceManager.GetString("bridge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to class Client
         ///{
         ///    void Main()
@@ -158,6 +167,38 @@ namespace Patterns.Properties {
         internal static string builder {
             get {
                 return ResourceManager.GetString("builder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Client
+        ///{
+        ///    public void Main()
+        ///    {
+        ///        Component root = new Composite(&quot;Root&quot;);
+        ///        Component leaf = new Leaf(&quot;Leaf&quot;);
+        ///        Composite subtree = new Composite(&quot;Subtree&quot;);
+        ///        root.Add(leaf);
+        ///        root.Add(subtree);
+        ///        root.Display();
+        ///    }
+        ///}
+        ///abstract class Component
+        ///{
+        ///    protected string name;
+        /// 
+        ///    public Component(string name)
+        ///    {
+        ///        this.name = name;
+        ///    }
+        /// 
+        ///    public abstract void Display();
+        ///    public abstract void Add(Component c); 
+        ///    pub [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string composite {
+            get {
+                return ResourceManager.GetString("composite", resourceCulture);
             }
         }
         
@@ -197,6 +238,46 @@ namespace Patterns.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to class SubsystemA
+        ///{
+        ///    public void A1()
+        ///    {}
+        ///}
+        ///class SubsystemB
+        ///{
+        ///    public void B1()
+        ///    {}
+        ///}
+        ///class SubsystemC
+        ///{
+        ///    public void C1()
+        ///    {}
+        ///}
+        /// 
+        ///public class Facade
+        ///{
+        ///    SubsystemA subsystemA;
+        ///    SubsystemB subsystemB;
+        ///    SubsystemC subsystemC;
+        /// 
+        ///    public Facade(SubsystemA sa, SubsystemB sb, SubsystemC sc)
+        ///    {
+        ///        subsystemA = sa;
+        ///        subsystemB = sb;
+        ///        subsystemC = sc;
+        ///    }
+        ///    public void Operation1()
+        ///    {
+        ///        subsystemA.A1();
+        ///        subsystem [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string facade {
+            get {
+                return ResourceManager.GetString("facade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to abstract class Product
         ///{}
         ///
@@ -221,6 +302,32 @@ namespace Patterns.Properties {
         internal static string factorymethod {
             get {
                 return ResourceManager.GetString("factorymethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class FlyweightFactory
+        ///{
+        ///    Hashtable flyweights = new Hashtable();
+        ///    public FlyweightFactory()
+        ///    {
+        ///        flyweights.Add(&quot;X&quot;, new ConcreteFlyweight());
+        ///        flyweights.Add(&quot;Y&quot;, new ConcreteFlyweight());
+        ///        flyweights.Add(&quot;Z&quot;, new ConcreteFlyweight());
+        ///    }
+        ///    public Flyweight GetFlyweight(string key)
+        ///    {
+        ///        if (!flyweights.ContainsKey(key))
+        ///            flyweights.Add(key, new ConcreteFlyweight());
+        ///        return flyweights[key] as Flyweight;
+        ///    }
+        ///}
+        /// 
+        ///abstract class  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string flyweight {
+            get {
+                return ResourceManager.GetString("flyweight", resourceCulture);
             }
         }
         
@@ -254,6 +361,42 @@ namespace Patterns.Properties {
         internal static string prototype {
             get {
                 return ResourceManager.GetString("prototype", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Client
+        ///{
+        ///    void Main()
+        ///    {
+        ///        Subject subject = new Proxy();
+        ///        subject.Request();
+        ///    }
+        ///}
+        ///abstract class Subject
+        ///{
+        ///    public abstract void Request();
+        ///}
+        /// 
+        ///class RealSubject : Subject
+        ///{
+        ///    public override void Request()
+        ///    {}
+        ///}
+        ///class Proxy : Subject
+        ///{
+        ///    RealSubject realSubject;
+        ///    public override void Request()
+        ///    {
+        ///        if (realSubject == null)
+        ///            realSubject = new RealSubject();
+        ///        realSubject.Request();
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string proxy {
+            get {
+                return ResourceManager.GetString("proxy", resourceCulture);
             }
         }
         

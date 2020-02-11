@@ -124,17 +124,32 @@
   <data name="adapter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\adapter.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
+  <data name="bridge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\bridge.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
   <data name="builder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\builder.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="composite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\composite.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
   <data name="decorator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\decorator.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
+  <data name="facade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\facade.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
   <data name="factorymethod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\factorymethod.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
+  <data name="flyweight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\flyweight.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
   <data name="prototype" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\prototype.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="proxy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\proxy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
   <data name="singleton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\singleton.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>

@@ -32,9 +32,7 @@ namespace Patterns
                 _ImageSource = value;
             }
         }
-        public Visibility ImageVisibility => (string.IsNullOrEmpty(ImageSource)) ? Visibility.Collapsed : Visibility.Visible;
-        public object Diagram { get; set; }
-
+        public Visibility ImageVisibility => (string.IsNullOrEmpty(_ImageSource)) ? Visibility.Collapsed : Visibility.Visible;
 
         private string GetCodeExampleFromFile(string codeExampleFilePath)
         {

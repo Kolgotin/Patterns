@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Patterns"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="{Binding WindowWidth}"
+             d:DesignHeight="450" d:DesignWidth="{Binding WindowWidth, Mode=TwoWay}"
              FontSize="20"
              Name="MainWindow">
 

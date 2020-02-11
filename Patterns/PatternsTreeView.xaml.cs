@@ -28,9 +28,15 @@ namespace Patterns
             var sv = (sender as ScrollViewer);
 
             if(e.Delta > 0)
+            {
                 sv.LineUp();
+                sv.LineUp();
+            }
             else
+            {
                 sv.LineDown();
+                sv.LineDown();
+            }
         }
     }
 }
