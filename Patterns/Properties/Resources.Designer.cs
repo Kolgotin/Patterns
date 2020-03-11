@@ -128,7 +128,27 @@ namespace Patterns.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to class Client
+        ///{
+        ///    static void Main()
+        ///    {
+        ///        Abstraction abstraction;
+        ///        abstraction = new RefinedAbstraction(new ConcreteImplementorA());
+        ///        abstraction.Operation();
+        ///        abstraction.Implementor=new ConcreteImplementorB();
+        ///        abstraction.Operation();
+        ///    }
+        ///}
+        ///abstract class Abstraction
+        ///{
+        ///    protected Implementor implementor;
+        ///    public Implementor Implementor
+        ///    {
+        ///        set { implementor = value; }
+        ///    }
+        ///    public Abstraction(Implementor imp)
+        ///    {
+        ///        i [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string bridge {
             get {
@@ -167,6 +187,78 @@ namespace Patterns.Properties {
         internal static string builder {
             get {
                 return ResourceManager.GetString("builder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Client
+        ///{
+        ///    void Main()
+        ///    {
+        ///        Handler h1 = new ConcreteHandler1();
+        ///        Handler h2 = new ConcreteHandler2();
+        ///        h1.Successor = h2;
+        ///        h1.HandleRequest(2);
+        ///    }
+        ///}
+        ///abstract class Handler
+        ///{
+        ///    public Handler Successor { get; set; }
+        ///    public abstract void HandleRequest(int condition);
+        ///}
+        /// 
+        ///class ConcreteHandler1 : Handler
+        ///{
+        ///    public override void HandleRequest(int condition)
+        ///    {
+        ///        if (condition == 1)
+        ///        {
+        ///            // обработка;
+        ///        }
+        ///  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string chainofresponsibility {
+            get {
+                return ResourceManager.GetString("chainofresponsibility", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to abstract class Command
+        ///{
+        ///    public abstract void Execute();
+        ///    public abstract void Undo();
+        ///}
+        ///// конкретная команда
+        ///class ConcreteCommand : Command
+        ///{
+        ///    Receiver receiver;
+        ///    public ConcreteCommand(Receiver r)
+        ///    {
+        ///        receiver = r;
+        ///    }
+        ///    public override void Execute()
+        ///    {
+        ///        receiver.Operation();
+        ///    }
+        /// 
+        ///    public override void Undo()
+        ///    {}
+        ///}
+        /// 
+        ///// получатель команды
+        ///class Receiver
+        ///{
+        ///    public void Operation()
+        ///    { }
+        ///}
+        ///// инициатор команды
+        ///class Invoker
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string command {
+            get {
+                return ResourceManager.GetString("command", resourceCulture);
             }
         }
         
@@ -334,6 +426,178 @@ namespace Patterns.Properties {
         /// <summary>
         ///   Looks up a localized string similar to class Client
         ///{
+        ///    void Main()
+        ///    {
+        ///        Context context = new Context();
+        /// 
+        ///        var expression = new NonterminalExpression();
+        ///        expression.Interpret(context);
+        /// 
+        ///    }
+        ///}
+        /// 
+        ///class Context
+        ///{
+        ///}
+        /// 
+        ///abstract class AbstractExpression
+        ///{
+        ///    public abstract void Interpret(Context context);
+        ///}
+        /// 
+        ///class TerminalExpression : AbstractExpression
+        ///{
+        ///    public override void Interpret(Context context)
+        ///    {
+        ///    }
+        ///}
+        /// 
+        ///class NonterminalExpression : AbstractExpression
+        ///{
+        ///    AbstractExpre [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string interpreter {
+            get {
+                return ResourceManager.GetString("interpreter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Client
+        ///{
+        ///    public void Main()
+        ///    {
+        ///        Aggregate a = new ConcreteAggregate();
+        ///             
+        ///        Iterator i = a.CreateIterator();
+        /// 
+        ///        object item = i.First();
+        ///        while (!i.IsDone())
+        ///        {
+        ///            item = i.Next();
+        ///        }
+        ///    }
+        ///}
+        /// 
+        ///abstract class Aggregate
+        ///{
+        ///    public abstract Iterator CreateIterator();
+        ///    public abstract int Count { get; protected set; }
+        ///    public abstract object this[int index] { get; set; }
+        ///}
+        ///  
+        ///class ConcreteAggregate : Aggre [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string iterator {
+            get {
+                return ResourceManager.GetString("iterator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to abstract class Mediator
+        ///{
+        ///    public abstract void Send(string msg, Colleague colleague);
+        ///}
+        /// 
+        ///abstract class Colleague
+        ///{
+        ///    protected Mediator mediator;
+        /// 
+        ///    public Colleague(Mediator mediator)
+        ///    {
+        ///        this.mediator = mediator;
+        ///    }
+        ///}
+        /// 
+        ///class ConcreteColleague1 : Colleague
+        ///{
+        ///    public ConcreteColleague1(Mediator mediator)
+        ///        : base(mediator)
+        ///    { }
+        ///  
+        ///    public void Send(string message)
+        ///    {
+        ///        mediator.Send(message, this);
+        ///    }
+        ///  
+        ///    public void Notify(str [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string mediator {
+            get {
+                return ResourceManager.GetString("mediator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Memento
+        ///{
+        ///    public string State { get; private set;}
+        ///    public Memento(string state)
+        ///    {
+        ///        this.State = state;
+        ///    }
+        ///}
+        /// 
+        ///class Caretaker
+        ///{
+        ///    public Memento Memento { get; set; }
+        ///}
+        /// 
+        ///class Originator
+        ///{
+        ///    public string State { get; set; }
+        ///    public void SetMemento(Memento memento)
+        ///    {
+        ///        State = memento.State;
+        ///    }
+        ///    public Memento CreateMemento()
+        ///    {
+        ///        return new Memento(State);
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string memento {
+            get {
+                return ResourceManager.GetString("memento", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interface IObservable
+        ///{
+        ///    void AddObserver(IObserver o);
+        ///    void RemoveObserver(IObserver o);
+        ///    void NotifyObservers();
+        ///}
+        ///class ConcreteObservable : IObservable
+        ///{
+        ///    private List&lt;IObserver&gt; observers;
+        ///    public ConcreteObservable()
+        ///    {
+        ///        observers = new List&lt;IObserver&gt;();
+        ///    }
+        ///    public void AddObserver(IObserver o)
+        ///    {
+        ///        observers.Add(o);
+        ///    }
+        /// 
+        ///    public void RemoveObserver(IObserver o)
+        ///    {
+        ///        observers.Remove(o);
+        ///    }
+        /// 
+        ///    public void NotifyObser [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string observer {
+            get {
+                return ResourceManager.GetString("observer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Client
+        ///{
         ///    void Operation()
         ///    {
         ///        Prototype prototype = new ConcretePrototype1(1);
@@ -419,6 +683,134 @@ namespace Patterns.Properties {
         internal static string singleton {
             get {
                 return ResourceManager.GetString("singleton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Program
+        ///{
+        ///    static void Main()
+        ///    {
+        ///        Context context = new Context(new StateA());
+        ///        context.Request(); // Переход в состояние StateB
+        ///        context.Request();  // Переход в состояние StateA
+        ///    }
+        ///}
+        ///abstract class State
+        ///{
+        ///    public abstract void Handle(Context context);
+        ///}
+        ///class StateA : State
+        ///{
+        ///    public override void Handle(Context context)
+        ///    {
+        ///        context.State = new StateB();
+        ///    }
+        ///}
+        ///class StateB : State
+        ///{
+        ///    public override void Handle(Context context [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string state {
+            get {
+                return ResourceManager.GetString("state", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to public interface IStrategy
+        ///{
+        ///    void Algorithm();
+        ///}
+        /// 
+        ///public class ConcreteStrategy1 : IStrategy
+        ///{
+        ///    public void Algorithm()
+        ///    {}
+        ///}
+        /// 
+        ///public class ConcreteStrategy2 : IStrategy
+        ///{
+        ///    public void Algorithm()
+        ///    {}
+        ///}
+        /// 
+        ///public class Context
+        ///{
+        ///    public IStrategy ContextStrategy { get; set; }
+        /// 
+        ///    public Context(IStrategy _strategy)
+        ///    {
+        ///        ContextStrategy = _strategy;
+        ///    }
+        /// 
+        ///    public void ExecuteAlgorithm()
+        ///    {
+        ///        ContextStrategy.Algorithm();
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string strategy {
+            get {
+                return ResourceManager.GetString("strategy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to abstract class AbstractClass
+        ///{
+        ///    public void TemplateMethod()
+        ///    {
+        ///        Operation1();
+        ///        Operation2();
+        ///    }
+        ///    public abstract void Operation1();
+        ///    public abstract void Operation2();
+        ///}
+        /// 
+        ///class ConcreteClass : AbstractClass
+        ///{
+        ///    public override void Operation1()
+        ///    {
+        ///    }
+        /// 
+        ///    public override void Operation2()
+        ///    {
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string templatemethod {
+            get {
+                return ResourceManager.GetString("templatemethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to class Client
+        ///{
+        ///    void Main()
+        ///    {
+        ///        var structure = new ObjectStructure();
+        ///        structure.Add(new ElementA());
+        ///        structure.Add(new ElementB());
+        ///        structure.Accept(new ConcreteVisitor1());
+        ///        structure.Accept(new ConcreteVisitor2());
+        ///    }
+        ///}
+        /// 
+        ///abstract class Visitor
+        ///{
+        ///    public abstract void VisitElementA(ElementA elemA);
+        ///    public abstract void VisitElementB(ElementB elemB);
+        ///}
+        /// 
+        ///class ConcreteVisitor1 : Visitor
+        ///{
+        ///    public override void VisitElementA(Eleme [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string visitor {
+            get {
+                return ResourceManager.GetString("visitor", resourceCulture);
             }
         }
     }

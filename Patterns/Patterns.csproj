@@ -169,5 +169,51 @@
   <ItemGroup>
     <None Include="CodeExamples\flyweight.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\strategy.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\observer.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\command.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\templatemethod.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\iterator.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\state.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\chainofresponsibility.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\interpreter.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\mediator.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\memento.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeExamples\visitor.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chainofresponsibility.png" />
+    <Resource Include="Images\command.png" />
+    <Resource Include="Images\interpreter.png" />
+    <Resource Include="Images\iterator.png" />
+    <Resource Include="Images\mediator.png" />
+    <Resource Include="Images\memento.png" />
+    <Resource Include="Images\observer.png" />
+    <Resource Include="Images\state.png" />
+    <Resource Include="Images\strategy.png" />
+    <Resource Include="Images\templatemethod.png" />
+    <Resource Include="Images\visitor.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

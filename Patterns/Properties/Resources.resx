@@ -130,6 +130,12 @@
   <data name="builder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\builder.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
+  <data name="chainofresponsibility" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\chainofresponsibility.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="command" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\command.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
   <data name="composite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\composite.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
@@ -145,6 +151,21 @@
   <data name="flyweight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\flyweight.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
+  <data name="interpreter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\interpreter.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="iterator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\iterator.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="mediator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\mediator.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="memento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\memento.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="observer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\observer.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
   <data name="prototype" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\prototype.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
@@ -153,5 +174,17 @@
   </data>
   <data name="singleton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\CodeExamples\singleton.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="state" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\state.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="strategy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\strategy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="templatemethod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\templatemethod.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="visitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CodeExamples\visitor.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
 </root>
